@@ -1,6 +1,12 @@
 # dotfiles
 My personal dotfiles and configuration files
 
+## Requirements
+
+- **Neovim** >= 0.9
+- **Git** >= 2.30
+- **Zsh** >= 5.8
+
 ## Setup
 
 Clone the repository:
