@@ -1,0 +1,30 @@
+[user]
+	name = philipp08888
+	email = admin@philipp08888.dev
+
+[init]
+	defaultBranch = main
+
+[core]
+	editor = nvim
+	autocrlf = input
+	excludesFile = ~/.gitignore_global
+
+[color]
+	ui = true
+
+[push]
+	autoSetupRemote = true
+
+[pull]
+	rebase = true
+
+[commit]
+	gpgSign = true
+
+[gpg]
+	format = ssh
+
+# Include private config
+[include]
+	path = ~/.gitconfig.local

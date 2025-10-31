@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Editor temporary files (vim/nvim)
+*.swp
+*.swo
+*.swn
+*~
