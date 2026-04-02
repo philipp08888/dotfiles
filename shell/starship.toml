@@ -1,0 +1,45 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+format = """
+$username$directory$git_branch$git_status
+ 
+"""
+
+[username]
+style_user = 'black bold'
+style_root = 'black bold'
+format = '[$user]($style) '
+disabled = false
+show_always = true
+
+[directory]
+truncation_length = 1
+truncation_symbol = '…/'
+home_symbol = '󰋜 ~'
+read_only_style = '197'
+read_only = '  '
+format = 'at [$path]($style)[$read_only]($read_only_style) '
+
+[nodejs]
+disabled = true
+
+[git_status]
+format = '([ \( $all_status$ahead_behind\)]($style) )'
+style = 'bold green'
+behind = ' behind=${count}'
+conflicted = '[ conflicted=${count}](red) '
+up_to_date = '[󰘽 up-to-date](green) '
+deleted = '[󰍶 deleted=${count}](red) '
+stashed = '[ stashed=${count}](green) '
+modified = '[󰛿 modified=${count}](yellow) '
+staged = '[󰐗 staged=${count}](green) '
+untracked = '[󰋗 untracked=${count}](red) '
+ahead = ' ahead=${count}'
+diverged = ' ahead=${ahead_count}  behind=${behind_count}'
+
+renamed = '[󱍸 renamed=${count}](yellow) '
+
+[character]
+success_symbol = ''
+error_symbol = ''

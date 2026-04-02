@@ -6,6 +6,8 @@ My personal dotfiles and configuration files
 - **Neovim** >= 0.9
 - **Git** >= 2.30
 - **Zsh** >= 5.8
+- **Starship** (installed via Brewfile)
+- **zsh-autosuggestions** (installed via Brewfile)
 
 ## Setup
 
@@ -13,6 +15,11 @@ Clone the repository:
 ```bash
 git clone git@github.com:philipp08888/dotfiles.git
 cd dotfiles
+```
+
+Install deps:
+```bash
+brew bundle install --file=Brewfile
 ```
 
 Run the setup script:

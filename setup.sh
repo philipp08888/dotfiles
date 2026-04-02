@@ -33,4 +33,8 @@ create_symlink "$SCRIPT_DIR/git/.gitignore_global" ~/.gitignore_global
 # create symlink for shell configuration
 create_symlink "$SCRIPT_DIR/shell/.zshrc" ~/.zshrc
 
+# create symlink for starship configuration
+mkdir -p ~/.config
+create_symlink "$SCRIPT_DIR/shell/starship.toml" ~/.config/starship.toml
+
 echo "setup complete, happy coding!"
