@@ -13,7 +13,7 @@ My personal dotfiles and configuration files
 
 Clone the repository:
 ```bash
-git clone git@github.com:philipp08888/dotfiles.git
+git clone git@github.com:philipp09777/dotfiles.git
 cd dotfiles
 ```
 

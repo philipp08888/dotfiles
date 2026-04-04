@@ -5,6 +5,7 @@
 	editor = nvim
 	autocrlf = input
 	excludesFile = ~/.gitignore_global
+	ignoreCase = false
 
 [color]
 	ui = true
@@ -12,11 +13,20 @@
 [push]
 	autoSetupRemote = true
 
+[diff]
+	algorithm = histogram
+
+[merge]
+	conflictstyle = zdiff3
+
 [pull]
 	rebase = true
 
 [commit]
 	gpgSign = true
+
+[rerere]
+    enabled = true
 
 [gpg]
 	format = ssh
