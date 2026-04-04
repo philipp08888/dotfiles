@@ -10,6 +10,9 @@
 [color]
 	ui = true
 
+[format]
+	pretty = "%C(yellow)%h%Creset %C(auto)%d%Creset %s %C(dim)%cr%Creset"
+
 [push]
 	autoSetupRemote = true
 
